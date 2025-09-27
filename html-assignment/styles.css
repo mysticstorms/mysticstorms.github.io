@@ -1,45 +1,35 @@
 /* styles.css */
-body {
+    body {
+        font-family: Monospace, sans-serif;
+        margin: 20px;
+        color: white;
+        background-color: #2C2D2D;}
 
-    font-family: Monospace, sans-serif;
-    margin: 20px;
+/**centering text**/
+    h1,main > p {
+        text-align: center;}
 
-    h1, main > p {
-    text-align: center;
-    }
 
-    /**adding color to text and background**/
-    color: white;
-
-    background-color: #2C2D2D;
-
-    /**modifying img size and layout**/
+/**modifying img size and layout**/
     img {
         width: 200px;
         height: auto;}
 
     .about-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    }
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;}
 
     .about-text {
-    flex: 1;
-    }
+        flex: 1;}
 
     .container {
-     text-align: center;
-    }
+        text-align: center;}
 
-    /**modifying list layout**/
-    ul {
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
+/* Modifying list layout */
     ul {
-      display: inline-block;
-    }
-}
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;}
