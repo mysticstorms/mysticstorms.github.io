@@ -16,8 +16,7 @@ body {
     /**modifying img size and layout**/
     img {
         width: 200px;
-        height: auto;
-    }
+        height: auto;}
 
     .about-container {
     display: flex;
@@ -27,5 +26,20 @@ body {
 
     .about-text {
     flex: 1;
+    }
+
+    .container {
+     text-align: center;
+    }
+
+    /**modifying list layout**/
+    ul {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ul {
+      display: inline-block;
     }
 }
