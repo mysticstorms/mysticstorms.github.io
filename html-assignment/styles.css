@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+
+    font-family: Monospace, sans-serif;
+    margin: 20px;
+
+    /**adding color to text and background**/
+    color: white;
+
+    background-color: #2C2D2D;
+
+    /**modifying img size and layout**/
+    img {
+        width: 200px;
+        height: auto;}
+
+    .about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    .about-text {
+    flex: 1;
+    }
+}
