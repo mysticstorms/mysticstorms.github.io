@@ -15,6 +15,93 @@
         background-color: #02302b;
     }
 
+/**header styling and layout**/
+    header {
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        background-color: #02302b;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+/**Button Styling**/
+
+    .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;}
+
+    .glow-on-hover:before {
+        content: '';
+        background: linear-gradient(45deg, #76dfce, #00eaff, #0084ff, #6600ff, #76dfce);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;}
+
+    .glow-on-hover:active {
+        color: #000;}
+
+    .glow-on-hover:active:after {
+        background: transparent;}
+
+    .glow-on-hover:hover:before {
+        opacity: 1;    }
+
+    .glow-on-hover:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;    }
+
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+        }
+
+    /**footer styling and layout**/
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+            background-color: #02302b;
+            box-shadow: 0 -4px 8px 0 rgb(0, 0, 0);
+            margin-top: 20px;
+        }
+
 /**centering text**/
     h1,main > p {
         text-align: center;}
@@ -39,7 +126,7 @@
         text-align: center;}
 
 
-/* Modifying list layout */
+/* Modifying hobby list layout */
     ul {
         width: fit-content;
         margin-left: auto;
@@ -47,7 +134,11 @@
         display: inline-block;}
 
     ul.hobbies {
-  list-style-type: square;}
+        list-style-type: square;}
+    
+    ul.hobbies li:nth-child(odd) {
+  background-color: #2f9d98;}
+
 
     
     
