@@ -11,19 +11,15 @@
         background-color: #2C2D2D;
     }
 
-    header, footer {
-        background-color: #02302b;
-    }
-
 /**header styling and layout**/
     header {
         padding: 10px;
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: white;
-        background-color: #02302b;
-        box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+        background-color: #4a3151;
+        box-shadow: 0 4px 8px 0 rgb(47, 23, 51);
         margin-bottom: 20px;
     }
 
@@ -37,8 +33,8 @@
 /**Button Styling**/
 
     .glow-on-hover {
-        width: 220px;
-        height: 50px;
+        width: 150px;
+        height: 40px;
         border: none;
         outline: none;
         color: #fff;
@@ -97,8 +93,8 @@
             text-align: center;
             font-size: 14px;
             color: white;
-            background-color: #02302b;
-            box-shadow: 0 -4px 8px 0 rgb(0, 0, 0);
+            background-color: #4a3151;
+            box-shadow: 0 -4px 8px 0 rgb(47, 23, 51);
             margin-top: 20px;
         }
 
