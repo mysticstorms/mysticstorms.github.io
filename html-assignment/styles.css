@@ -8,9 +8,8 @@
         font-size: 18px;
         margin: 20px;
         color: white;
-        background-color: #2C2D2D;
+        background-color: #131313;
     }
-
 /**header styling and layout**/
     header {
         padding: 10px;
@@ -30,7 +29,14 @@
         font-weight: bold;
     }
 
-/**Button Styling**/
+/**centering text**/
+
+    h1,main > p {
+        text-align: center;    
+    }
+
+
+/**Glowing Nav Button Styling**/
 
     .glow-on-hover {
         width: 150px;
@@ -107,19 +113,22 @@
 /**footer link styling**/
 
     .button-effect {
+        text-decoration: none;
         border-radius: 4px;
-        background-color: #5ca1e1;
+        background-color: #b75ce1;
         border: none;
-        color: #fff;
+        color: #dff8ff;
         text-align: center;
         font-size: 16px;
         padding: 16px;
         width: 220px;
         transition: all 0.5s;
         cursor: pointer;
-        margin: 36px;
-        box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+        margin: 16px;
+        box-shadow: 5px 10px 20px -8px rgba(187, 9, 164, 0.7);
     }
+
+    
 
     .button-effect {
         cursor: pointer;
@@ -146,13 +155,6 @@
         opacity: 1;
         right: 10px;    
     }
-            
-/**centering text**/
-
-    h1,main > p {
-        text-align: center;    
-    }
-
 
 /**modifying img size and layout**/
     
@@ -177,20 +179,44 @@
     }
 
 
-    /* Modifying hobby list layout */
+/* Modifying hobby list layout */
 
-        ul {
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            display: inline-block;  
+    ul {
+
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-        ul.hobbies {
-            list-style-type: square;    }
+    ul.hobbies {
+        list-style-type: square;    
+    }
         
-        ul.hobbies li:nth-child(odd) {
-            background-color: #2f9d98;  
+    ul.hobbies li:nth-child(odd) {
+        background-color: #9d2f71;  
+    }
+
+
+/** Notes page footer buttons **/
+    
+    .simple-footer-button {
+        transition: all .5s ease;
+        color: #fff;
+        border: 3px solid white;
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-size: 14px;
+        background-color : transparent;
+        padding: 10px;
+        outline: none;
+        border-radius: 4px;
+    }
+
+    .simple-footer-button:hover {
+        color: #3f0026;
+        background-color: #fff;
     }
 
 
