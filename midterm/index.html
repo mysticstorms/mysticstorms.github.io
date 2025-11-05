@@ -23,76 +23,83 @@
         </nav>
 
 <!--main body-->
-    <div class="container">
-        
-        <section id="home" class="content-section">
 
+    <main>
+        <div class="container">
+
+<!--story/biography section-->
             <h2>Life of a Hero</h2>
+        
+            <div class="content-section" id="home">
            
-            <div class="bakugo-content">
-                <img src='images/kacchan-1.webp' alt="kacchan" class="bakugo-image">
-                <div class="bakugo-text">
-                    <p>Katsuki Bakugo is a student at U.A. High School training to become a Pro Hero. Known for his explosive personality and equally explosive Quirk, Bakugo is determined to become the number one hero. His Quirk, Explosion, allows him to secrete nitroglycerin-like sweat from his palms and ignite it at will, creating powerful explosions. Despite his aggressive demeanor and competitive nature, Bakugo possesses exceptional combat skills, strategic thinking, and an unwavering drive to succeed. His childhood friendship with Izuku Midoriya has evolved into a complex rivalry that pushes both of them to become stronger. Bakugo's journey from an arrogant student to a hero who learns the value of teamwork and saving others showcases his character development throughout the series. His powerful attacks like AP Shot, Howitzer Impact, and Explosion Catapult demonstrate his mastery over his Quirk. With his fierce determination, natural talent, and refusal to give up, Bakugo continues to prove himself as one of U.A.'s most promising students.</p>
+                <div class="bakugo-content">
+                    <img src='images/kacchan-1.webp' alt="kacchan" class="bakugo-image">
+                    
+                    <div class="bakugo-text">
+                        <p>Katsuki Bakugo is a student at U.A. High School training to become a Pro Hero. Known for his explosive personality and equally explosive Quirk, Bakugo is determined to become the number one hero. His Quirk, Explosion, allows him to secrete nitroglycerin-like sweat from his palms and ignite it at will, creating powerful explosions. Despite his aggressive demeanor and competitive nature, Bakugo possesses exceptional combat skills, strategic thinking, and an unwavering drive to succeed. His childhood friendship with Izuku Midoriya has evolved into a complex rivalry that pushes both of them to become stronger. Bakugo's journey from an arrogant student to a hero who learns the value of teamwork and saving others showcases his character development throughout the series. His powerful attacks like AP Shot, Howitzer Impact, and Explosion Catapult demonstrate his mastery over his Quirk. With his fierce determination, natural talent, and refusal to give up, Bakugo continues to prove himself as one of U.A.'s most promising students.</p>
+                    </div>
+                
                 </div>
-            
             </div>
-        </section>
 
-        <section id="list" class="content-section">
-            
-            <h2>Facts About Bakugo</h2>
-            
-            <ul>
-                <li>His hero name is "Great Explosion Murder God Dynamight" (commonly shortened to Dynamight).</li>
-                <li>Bakugo's Quirk, Explosion, allows him to create powerful blasts from his palms using his nitroglycerin-like sweat.</li>
-                <li>He ranked 1st in the U.A. Sports Festival and has consistently been one of the top students in Class 1-A.</li>
-                <li>Despite his aggressive personality, Bakugo is highly intelligent with excellent grades and combat instincts.</li>
-            </ul>
-        </section>
+<!--facts section-->
+            <h2>Facts on Katsuki Bakugo</h2>
+                
+                <div class="content-section" id="list">
+                    <ul>
+                        <li>His hero name is "Great Explosion Murder God Dynamight" (commonly shortened to Dynamight).</li>
+                        <li>Bakugo's Quirk, Explosion, allows him to create powerful blasts from his palms using his nitroglycerin-like sweat.</li>
+                        <li>He ranked 1st in the U.A. Sports Festival and has consistently been one of the top students in Class 1-A.</li>
+                        <li>Despite his aggressive personality, Bakugo is highly intelligent with excellent grades and combat instincts.</li>
+                    </ul>
+                </div>
 
 <!--contact section-->
-        <section id="contact" class="content-section">
-          
             <h2>Contact to learn more</h2>
-          
-            <form class="contact-form" onsubmit="return handleSubmit(event)">
-          
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            
+            <div class="content-section" id="contact">
+                    
+                <form class="contact-form" onsubmit="return handleSubmit(event)">
+            
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
 
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                    <textarea name="message" required></textarea>
+                    </div>
 
-                <div class="radio-group">
-                    <p style="font-weight: bold; margin-bottom: 10px;">Would you like to learn more about Bakugo Katsuki (aka Kacchan)?</p>
-                    <label><input type="radio" value="yes" required> Yes</label>
-                    <label><input type="radio" value="no"> No</label>
-                    <label><input type="radio" value="maybe"> Maybe</label>
-                </div>
+                    <div class="radio-group">
+                        <p>Would you like to learn more about Bakugo Katsuki (aka Kacchan)?</p>
+                        
+                    <p><label><input type="radio" value="yes" required> Yes</label>
+                        <label><input type="radio" value="no"> No</label>
+                        <label><input type="radio" value="maybe"> Maybe</label></p>
+                    </div>
+                    
+                    <div class="button">
+                        <button type="submit">SEND</button>
+                    </div>
 
-                <button type="submit">SEND</button>
-            </form>
-        </section>
-    </div>
-
+                </form>
+            </div>
+        </div>
+    </main>
 <!--footer-->
     <footer>
-        Copyright &copy; Katsuki Bakugo Fan Page, 2025
+        <p>Copyright &copy; Katsuki Bakugo Fan Page, 2025</p>
     </footer>
 
 <!--Javascript for the contact form-->
     <script>
         function handleSubmit(event) {
-            event.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
             event.target.reset();
             return false;
