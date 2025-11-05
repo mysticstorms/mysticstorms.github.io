@@ -1,7 +1,6 @@
 /*apply to all elements - box*/
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
     box-sizing: border-box;
 }
 
@@ -9,7 +8,7 @@
 body {
     font-family: monospace, sans-serif;
     background-color: #1a1a1a;
-    color: #333;
+    color: #2a2927;
 }
 
 /*Header and header photo styling*/
@@ -22,7 +21,9 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    background-image: linear-gradient(to bottom, #f8e7ce, #ff9d00, #ff8400, #ff6a00, #e54c3e)
 }
 
 .hero-image {
@@ -30,16 +31,14 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.7);
 }
-
+/*header title*/
 .hero h1 {
     color: rgb(243, 227, 207);
-    font-size: 3em;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
-    position: relative;
-    z-index: 1;
+    font-size: 45px;
     font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(82, 26, 2, 0.8);
+    position: relative;
 }
 
 /* Navigation bar styling */
@@ -49,7 +48,8 @@ nav {
     padding: 10px 20px;
     background-color: #2a2a2a;
     display: flex;
-
+    border-left: 5px solid #e54c3e;
+    border-right: 5px solid #e54c3e;
 }
 
 nav a {
@@ -67,8 +67,9 @@ nav a:last-child {
     border-right: none;
 }
 
+/*hover button styling*/
 nav a:hover {
-    background-color: #ff6b1a;
+    background: linear-gradient(45deg, #e54c3e, #ff6a00, #ff8400, #ff9d00, #e54c3e);
 }
 
 /* Main container styling */
@@ -79,6 +80,14 @@ nav a:hover {
     background-color: rgb(243, 227, 207);
 }
 
+/* Main container border gradient */
+.container {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #e54c3e, #ff6a00, #ff8400, #ff9d00, #f8e7ce, #ff9d00, #ff8400, #ff6a00, #e54c3e) 1;
+}
+
+/*h2 styling*/
 h2 {
     color: #ff6b1a;
     margin-bottom: 20px;
@@ -91,18 +100,22 @@ h2 {
     margin-bottom: 40px;
 }
 
+/*image border styling*/
 .bakugo-image {
     float: left;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 3px solid #ff6b1a;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#e54c3e, #ff6a00, #ff8400, #ff9d00, #ff9d00, #ff8400, #ff6a00, #e54c3e);
     margin-right: 20px;
     margin-bottom: 10px;
 }
 
+/*text spacing*/
 .bakugo-text {
-    line-height: 1.5}
+    line-height: 1.5;
+}
 
 /* spacing title of contact form and contact form*/
 .content-section {
@@ -178,4 +191,11 @@ footer {
     padding: 20px 20px;
     background-color: rgb(243, 227, 207);
     color: #666;
+}
+
+/* Footer border gradient */
+footer {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-image: linear-gradient(to top, #f8e7ce, #ff9d00, #ff8400, #ff6a00, #e54c3e) 1;
 }
