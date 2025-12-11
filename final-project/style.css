@@ -122,7 +122,7 @@ nav ul li a:hover {
 
 .search-form button {
     background-color: #222;
-    border: none;
+    border: 1px solid #c78c06;
     padding: 8px 10px;
     cursor: pointer;
     display: flex;
@@ -690,3 +690,273 @@ footer {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+    
+
+
+    /* nav */
+    
+    .header {
+        background-color: #c78c06;
+        padding: 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        align-items: left;
+
+    }
+
+    .logo {
+        align-items: left;
+        background-color: #c78c06;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #222;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    nav ul li a:hover {
+        background-color: #c78c06;
+        color: #222;
+    }
+    
+    .search-form {
+        width: 100%;
+    }
+    
+    .search-form input[type="search"] {
+        width: 100%;
+        flex: 1;
+    }
+    
+
+
+
+
+
+
+
+    /* Home */
+    
+    .title-container {
+        padding: 30px 20px;
+    }
+    
+    .title-container h2 {
+        font-size: 52px;
+    }
+    
+    .title-container p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .contact-but {
+        padding: 25px 25px;
+        font-size: 20px;
+    }
+    
+    
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .about-container img {
+        padding: 25px;
+        width: 100%;
+    }
+    
+    .about-text {
+        margin-left: 0;
+
+    }
+
+
+    .about-text h2 {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    
+
+
+
+    /* Services */
+    
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .services-container > h2 {
+        font-size: 42px;
+        margin-bottom: 0px;
+    }
+    
+    .services-item:nth-child(1) {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+    
+    .services-item:nth-child(2),
+    .services-item:nth-child(3), 
+    .services-item:nth-child(4),
+    .services-item:nth-child(5),
+    .services-item:nth-child(6) {
+        grid-column: 1;
+    }
+    
+    .services-item img {
+        height: 200px;
+    }
+    
+    .service-item {
+        padding: 0px 10px;
+    }
+    
+    .service-item h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .btn-plans {
+        padding: 20px 0px;
+        width: 35%;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+    
+
+    /* Vision Section */
+    .vision {
+        background-size: cover;
+        padding: 10px 20px;
+        padding-top: 30px;
+    }
+    
+    .vision-container h2 {
+        font-size: 28px;
+    }
+    
+    .vision-container p {
+        font-size: 14px;
+    }
+    
+    .learn-more-btn {
+        padding: 30px;
+        font-size: 20px;
+        width: 35%;
+        display: block;
+        text-align: center;
+    }
+    
+
+
+    /* Team Section */
+
+    .team h2 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+   
+    .team-member {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member:nth-child(3) img {
+        order: 1;
+    }
+    
+    .team-member:nth-child(3) .team-content {
+        order: 2;
+    }
+    
+    .team-member img {
+        width: 100%;
+    }
+    
+    .team-content {
+        padding: 20px 10px;
+    }
+    
+    .team-content h3:first-child {
+        font-size: 35px;
+    }
+    
+    .team-content h3:nth-child(2) {
+        font-size: 18px;
+    }
+    
+    .john-doe{
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+    /* Contact Section */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container > h2 {
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    
+    .btn-submit {
+        padding: 5px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    
+    .location iframe {
+        height: 300px;
+    }
+    
+    .table-h {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hours table th,
+    .hours table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .contact-form-area h3,
+    .location h3,
+    .hours h3 {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        padding: 0 20px;
+    }
+}
