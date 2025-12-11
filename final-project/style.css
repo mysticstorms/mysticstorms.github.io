@@ -546,6 +546,7 @@ grid-column: span 1;
 
 .contact-container > h2 {
     font-size: 36px;
+    font-weight: bold;
     margin-bottom: 40px;
     color: #222;
 }
@@ -556,6 +557,7 @@ grid-column: span 1;
 
 .contact-form-area h3 {
     font-size: 28px;
+    font-weight: bold;
     margin-bottom: 20px;
     color: #222;
 }
@@ -612,6 +614,7 @@ grid-column: span 1;
 
 .location h3 {
     font-size: 28px;
+    font-weight: bold;
     margin-bottom: 20px;
     color: #222;
 }
@@ -628,6 +631,7 @@ grid-column: span 1;
 
 .hours h3 {
     font-size: 28px;
+    font-weight: bold;
     color: #222;
 }
 
@@ -659,10 +663,6 @@ grid-column: span 1;
 
 
 
-
-
-
-
 /* Footer */
 footer {
     background-color: #222;
@@ -690,6 +690,19 @@ footer {
     text-decoration: underline;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     
 
