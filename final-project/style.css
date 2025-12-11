@@ -296,7 +296,7 @@ nav ul li a:hover {
     background-color: #444;
 }
 
-/* Services Style */
+/* Services style */
 #services {
     padding: 40px 20px;
     background-color: #fff;
@@ -314,7 +314,9 @@ nav ul li a:hover {
     color: #222;
 }
 
-/* Create a grid layout for all service items */
+
+
+/* grid layout for services */
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -347,7 +349,9 @@ grid-column: span 1;
     flex-direction: column;
 }
 
-/* Individual service item styles */
+
+
+/* Individual service item style*/
 .services-item {
     display: flex;
     flex-direction: column;
@@ -400,7 +404,7 @@ grid-column: span 1;
 
 
 
-/* Vision Section */
+/* Vision section */
 .vision {
     background-image: url('images/vision.jpg');
     background-size: 100%;
@@ -509,7 +513,6 @@ grid-column: span 1;
 .team-content hr {
     border: none;
     border-top: 2px solid #c78c06;
-    margin-bottom: 20px;
     width: 100%;
 }
 
